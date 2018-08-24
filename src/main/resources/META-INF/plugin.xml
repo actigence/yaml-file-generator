@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.actigence.p2y</id>
+    <name>Properties To Yaml Converter</name>
+    <vendor email="support@actigence.com" url="http://www.actigence.com">Actigence Solutions</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="com.actigence" text="Generate Yaml file" description="Generate Yaml file">
+
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+
+            <action id="com.actigence.p2y.action.PropertiesFileConvertAction"
+                    class="com.actigence.p2y.action.PropertiesFileConvertAction"
+                    text="Generate Yaml file"
+                    description="Generate Yaml file"/>
+        </group>
+    </actions>
+</idea-plugin>
