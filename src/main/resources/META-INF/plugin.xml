@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.actigence.p2y</id>
-  <name>YAML5 File Generator</name>
+  <name>YAML File Generator</name>
   <vendor email="support@actigence.com" url="http://www.actigence.com">Actigence Solutions</vendor>
 
   <description><![CDATA[
