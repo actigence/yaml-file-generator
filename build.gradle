@@ -24,3 +24,8 @@ patchPluginXml {
     changeNotes """
       Initial Framework for Yaml File Generator plugin."""
 }
+
+publishPlugin {
+    username intellijPublishUsername
+    password intellijPublishPassword
+}

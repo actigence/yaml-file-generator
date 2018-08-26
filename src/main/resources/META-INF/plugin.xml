@@ -1,33 +1,35 @@
 <idea-plugin>
-    <id>com.actigence.p2y</id>
-    <name>Properties To Yaml Converter</name>
-    <vendor email="support@actigence.com" url="http://www.actigence.com">Actigence Solutions</vendor>
+  <id>com.actigence.p2y</id>
+  <name>YAML5 File Generator</name>
+  <vendor email="support@actigence.com" url="http://www.actigence.com">Actigence Solutions</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+  <description><![CDATA[
+    <p>This plugin is used to generate Yaml file from a Properties file.</p>
+    <strong>Usage:</strong>
+    After installing the plugin:
+    <ul>
+    <li>Open the properties file.</li>
+    <li>Right click on editor region.</li>
+    <li>Select 'Generate Yaml File' option.</li>
+    <li>A new Yaml file (with same name as properties file) will be generated in same directory as the selected properties file.</li>
+    </ul>
     ]]></description>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
 
-    <actions>
-        <!-- Add your actions here -->
-        <group id="com.actigence" text="Generate Yaml file" description="Generate Yaml file">
+  <actions>
+    <!-- Add your actions here -->
+    <group description="Generate Yaml file" id="com.actigence" text="Generate Yaml file">
 
-            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+      <add-to-group anchor="last" group-id="EditorPopupMenu"/>
 
-            <action id="com.actigence.p2y.action.PropertiesFileConvertAction"
-                    class="com.actigence.p2y.action.PropertiesFileConvertAction"
-                    text="Generate Yaml file"
-                    description="Generate Yaml file"/>
-        </group>
-    </actions>
+      <action class="com.actigence.p2y.action.PropertiesFileConvertAction"
+        description="Generate Yaml file"
+        id="com.actigence.p2y.action.PropertiesFileConvertAction"
+        text="Generate Yaml file"/>
+    </group>
+  </actions>
 </idea-plugin>
