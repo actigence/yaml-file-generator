@@ -13,6 +13,10 @@
     <li>Select 'Generate Yaml File' option.</li>
     <li>A new Yaml file (with same name as properties file) will be generated in same directory as the selected properties file.</li>
     </ul>
+    <hr/>
+    <p>Source code of this plugin is available on <a target="_blank" href="https://github.com/Actigence/yaml-file-generator">Github</a> repository.</p>
+    <p>Any bugs or enhancements can be reported at <a target="_blank" href="https://github.com/Actigence/yaml-file-generator/issues/new">Github Issues</a> section.</p>
+    <p>Any contributions to this plugin are highly appreciated.</p>
     ]]></description>
 
 
