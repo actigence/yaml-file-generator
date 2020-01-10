@@ -1,11 +1,10 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.3.7'
+    id 'org.jetbrains.intellij' version '0.4.15'
 }
 
 group 'com.actigence'
-version '1.0.1'
-
+version '2019.3'
 sourceCompatibility = 1.8
 
 repositories {
@@ -18,14 +17,13 @@ dependencies {
 }
 
 intellij {
-    version '2018.2.1'
+    version '2019.3'
 }
 patchPluginXml {
     changeNotes """
-      Initial Framework for Yaml File Generator plugin."""
+      Support for IntelliJ 2019.3."""
 }
 
 publishPlugin {
-    username intellijPublishUsername
-    password intellijPublishPassword
+    token intellijPublishToken
 }
